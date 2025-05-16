@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import { Routes, Route } from 'react-router-dom';
 import AccountPage from './pages/AccountPage';
 import ReviewPage from './pages/ReviewPage';
