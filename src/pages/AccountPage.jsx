@@ -178,7 +178,7 @@ export default function AccountPage() {
       >
         <h1 style={{ marginBottom: '1.5rem' }}>User Profile</h1>
 
-        {/* Avatar */}
+      
         <div style={{ marginBottom: '1.5rem' }}>
           <img
             src={user.avatar || DEFAULT_AVATAR}
@@ -207,7 +207,7 @@ export default function AccountPage() {
           </p>
         </div>
 
-        {/* Form Fields */}
+
         <div style={{ textAlign: 'left' }}>
           <input type="text" name="name" placeholder="Name" value={user.name} onChange={handleChange} style={inputStyle(inputBackground, inputBorder, textColor, placeholderColor)} />
           <input type="email" name="email" placeholder="Email" value={user.email} onChange={handleChange} style={inputStyle(inputBackground, inputBorder, textColor, placeholderColor)} />
@@ -229,7 +229,7 @@ export default function AccountPage() {
           <input type="password" name="passwordConfirm" placeholder="Confirm Password" value={user.passwordConfirm} onChange={handleChange} style={inputStyle(inputBackground, inputBorder, textColor, placeholderColor)} />
         </div>
 
-        {/* Preferences */}
+    
         <div style={{ marginBottom: '1.5rem', padding: '1rem', backgroundColor: user.darkMode ? '#1a202c' : '#f0f0f0', borderRadius: '8px', textAlign: 'left', border: `1px solid ${inputBorder}` }}>
           <h3 style={{ color: textColor, marginBottom: '0.8rem' }}>Preferences</h3>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: textColor }}>
@@ -246,20 +246,17 @@ export default function AccountPage() {
           </label>
         </div>
 
-        {/* Social Links */}
         <div style={{ textAlign: 'left', marginBottom: '1.5rem' }}>
           <input type="text" name="social.google" placeholder="Google Profile Link" value={user.social.google} onChange={handleChange} style={inputStyle(inputBackground, inputBorder, textColor, placeholderColor)} />
           <input type="text" name="social.facebook" placeholder="Facebook Profile Link" value={user.social.facebook} onChange={handleChange} style={inputStyle(inputBackground, inputBorder, textColor, placeholderColor)} />
         </div>
 
-        {/* Error Message */}
         {error && (
           <p style={{ color: '#f56565', marginBottom: '1rem', fontWeight: 'bold' }}>
             {error}
           </p>
         )}
 
-        {/* Buttons */}
         <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
           <button onClick={handleSave} style={buttonStyle(user.darkMode ? '#3182ce' : '#2b6cb0')}>Save</button>
           <button onClick={handleReset} style={buttonStyle('#718096')}>Reset</button>
