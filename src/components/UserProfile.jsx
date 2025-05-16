@@ -1,4 +1,3 @@
-// src/components/UserProfile.jsx
 import styles from './UserProfile.module.css';
 
 export default function UserProfile({ user, setUser }) {
