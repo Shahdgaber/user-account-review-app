@@ -1,4 +1,4 @@
-// src/pages/ReviewPage.jsx
+
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -74,8 +74,8 @@ export default function ReviewPage() {
       style={{
         minHeight: '100vh',
         width: '100vw',
-        backgroundColor: '#121212', // داكن جداً
-        color: '#e0e0e0', // لون نص فاتح
+        backgroundColor: '#121212', 
+        color: '#e0e0e0', 
         display: 'flex',
         justifyContent: 'center',
         padding: '2rem 1rem',
@@ -87,7 +87,7 @@ export default function ReviewPage() {
         style={{
           width: '100%',
           maxWidth: '700px',
-          backgroundColor: '#1e1e1e', // خلفية البطاقة داكنة
+          backgroundColor: '#1e1e1e', 
           borderRadius: '12px',
           boxShadow: '0 0 15px rgba(0,0,0,0.8)',
           padding: '2rem',
